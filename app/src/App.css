@@ -3,10 +3,39 @@ body {
 }
 
 .background {
-  background: url(./assets/background.png) no-repeat center center fixed;
+  background: url(./assets/background.png) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.list-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 20px;
+  height: -webkit-fill-available;
+}
+
+.playlist {
+  overflow-x: auto;
+  flex-grow: 1;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  flex-grow: 1;
 }
